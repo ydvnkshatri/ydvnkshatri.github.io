@@ -1,0 +1,99 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="intro">
+				<h1>Hi, I'm Yadvendra.</h1>
+				<p class="lede">
+					I build AI systems for production. I'm currently Head of AI and co-founder at
+					<a href="https://www.aaysanalytics.com/">Aays Analytics</a>, where I lead forward-deployed engineering on
+					LLM-powered agents, retrieval pipelines, and evaluation harnesses for enterprise clients.
+				</p>
+				<p>
+					Previously, I have co-founded <a href="https://fabrichq.ai/">Fabric</a> and <a href="https://aidetic.in/">Aidetic</a> where I set-up AI and Data teams from scratch and delivered AI solutions to enterprise clients.
+				</p>
+			</section>
+
+			<section>
+				<p>
+					Over the last five years I've grown Aidetic from zero to a 65-person team, doubled revenue
+					year-over-year for three consecutive years, and shipped agentic systems across fintech,
+					SaaS, oil &amp; gas, and banking. During this time I also co-founded
+					Fabric (at that point D2C e-commerce AI), worked on
+					enterprise Q&amp;A systems at Nesh, and started out doing data science at Coviam and ZS
+					Associates.
+				</p>
+				<p>
+					What I care about most: agent architectures that actually work in production,
+					tool-use design, context engineering, evaluation, cost and latency, and the
+					human-in-the-loop guardrails that make all of it safe to deploy.
+				</p>
+			</section>
+
+			<section>
+				<h2>What I'm working on</h2>
+				<ul>
+					<li>
+						An agent-factory platform that lets 400+ business users at a Docomo Group
+						retail company spin up LLM agents over 1,200+ data tables.
+					</li>
+					<li>
+						An <a href="https://github.com/minas-ai/haki">agent harness</a> to improve their performance and replicating agentic architectures for clients at scale and speed.
+					</li>
+					<li>
+						The strategic <a href="https://www.databricks.com/">Databricks</a> partnership at Aidetic;
+						training curricula, client workshops, and a migration accelerator that
+						speeds up competitive migrations by ~40%.
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<p>
+					More about my <a href="/about">background</a>, or find me on
+					<a href="https://www.linkedin.com/in/yadvendra-kshatri-28137a88/">LinkedIn</a>
+					and <a href="https://github.com/ydvnkshatri">GitHub</a>. The
+					<a href="/blog">blog</a> is where I'll write up things I've learned along the way (just starting it first time...).
+				</p>
+			</section>
+		</main>
+		<Footer />
+		<style>
+			.intro {
+				margin-top: 1em;
+				margin-bottom: 2em;
+			}
+			.intro h1 {
+				margin-bottom: 0.4em;
+			}
+			.lede {
+				font-size: 1.2em;
+				color: rgb(var(--gray-dark));
+			}
+			section {
+				margin-bottom: 1.5em;
+			}
+			section h2 {
+				font-size: 1.563em;
+				margin-top: 1em;
+			}
+			ul {
+				padding-left: 1.2em;
+			}
+			ul li {
+				margin-bottom: 0.6em;
+			}
+		</style>
+	</body>
+</html>
